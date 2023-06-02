@@ -4,6 +4,7 @@ const openNav = document.querySelector('.open-nav');
 const closeNav = document.querySelector('.close-nav');
 const aList = document.querySelector('.a_list');
 const menuLinks = document.querySelectorAll('.a_list a[href^="#"]');
+const progressbars = document.querySelectorAll('.progressbar span');
 
 
 window.addEventListener('scroll', () => {
@@ -26,3 +27,7 @@ menuLinks.forEach(link => {
         nav.classList.remove('visible');
     })
 });
+
+progressbars.forEach(bar => {
+    bar.style.width = bar.textContent;
+})

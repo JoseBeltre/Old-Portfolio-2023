@@ -12,6 +12,7 @@
     font-family: 'Josefin Sans';
 }
 html{
+    font-size: 20px;
     scroll-behavior: smooth;
 }
 body{
@@ -122,8 +123,8 @@ main{
     margin-top: 50px;
 }
 section{
-    scroll-margin-top: 100px;
-    margin: 20px 0px;
+    scroll-margin-top: 235px;
+    margin-bottom: 100px;
     width: 100%;
 }
 .home{
@@ -185,6 +186,13 @@ section{
     border-bottom-left-radius: 10px;
     color: #f1c3c3;
     overflow: hidden;
+    transform: scale(.95);
+    transform-origin: 50% 100%;
+    transition: transform .6s ease;
+}
+.about:hover{
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
 }
 .about__div1{
     background-color: var(--secondary);
@@ -238,8 +246,60 @@ section{
     width: 40%;
     min-height: 100%;
 }
+.skills{
+    display: flex;
+    flex-flow: column nowrap;
+    /* background-color: var(--secondary); */
+    padding: 30px;
+    border-radius: 10px;
+    gap: 50px;
+}
+.skills h2{
+    text-align: center;
+}
+.skills ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.skills li{
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 230px;
+    flex: 1 0 33%;
+    gap: 10px;
+}
+.progressbar{
+    background-color: #0000002a;
+    min-height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 5px inset #00000065; */
+}
+.progressbar span{
+    display: flex;
+    justify-content: end;
+    background-color: #af2020;
+    padding: 3px;
+    height: 100%;
+}
 
-@media screen and (max-width: 730px) {
+
+@media screen and (min-width: 1280px) {
+    .about__div1{
+        padding: 50px;
+        text-align: justify;
+
+    }
+    .about__div1-infolist{
+        margin: 30px 0px;
+    }
+    .about__div1 ul li{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 790px) {
     header{
         justify-content: center;
         gap: 10px;
@@ -302,10 +362,7 @@ section{
         min-height: 400px
     }
 }
-/* @media screen and (max-width: 460px) {
-    
-} */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 520px){
     .open-nav,
     .close-nav{
     display: block;
@@ -343,7 +400,7 @@ section{
         align-items: end;
         padding: 1rem 2rem;
         gap: 2rem;
-        box-shadow: 0 0 0 100vmax #00000081;
+        /* box-shadow: 0 0 0 100vmax #00000081; */
         transform: scaleY(1);
         transform-origin: 100% 0%;
         justify-content: center;
