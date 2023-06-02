@@ -3,6 +3,7 @@ const nav = document.querySelector('.nav');
 const openNav = document.querySelector('.open-nav');
 const closeNav = document.querySelector('.close-nav');
 const aList = document.querySelector('.a_list');
+const menuLinks = document.querySelectorAll('.a_list a[href^="#"]');
 
 
 window.addEventListener('scroll', () => {
@@ -15,9 +16,13 @@ window.addEventListener('scroll', () => {
 
 openNav.addEventListener('click', () => {
     nav.classList.toggle('visible');
-    aList.classList.toggle('visible');
 })
 closeNav.addEventListener('click', () => {
     nav.classList.toggle('visible');
-    aList.classList.toggle('visible');
 })
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    })
+});
