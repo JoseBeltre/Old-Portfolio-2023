@@ -4,6 +4,7 @@ const openNav = document.querySelector('.open-nav');
 const closeNav = document.querySelector('.close-nav');
 const aList = document.querySelector('.a_list');
 
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1) {
         header.classList.add('setBgColor')
@@ -19,5 +20,4 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
     nav.classList.toggle('visible');
     aList.classList.toggle('visible');
-
 })
