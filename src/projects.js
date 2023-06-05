@@ -1,3 +1,4 @@
+//Class for projects
 export class Project{
     constructor(title, description, img, url){
         this.title = title;
