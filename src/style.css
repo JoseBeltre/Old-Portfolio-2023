@@ -269,7 +269,30 @@ section{
     min-width: 230px;
     flex: 1 0 33%;
     gap: 10px;
+
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: transform 1s ease;
 }
+.animate{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+}
+.about{
+    transform: translateX(100%);
+}
+.show,
+li.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: transform 1s ease;
+}
+
+
 .progressbar{
     background-color: #0000002a;
     min-height: 20px;

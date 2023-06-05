@@ -5,6 +5,22 @@ const closeNav = document.querySelector('.close-nav');
 const aList = document.querySelector('.a_list');
 const menuLinks = document.querySelectorAll('.a_list a[href^="#"]');
 const progressbars = document.querySelectorAll('.progressbar span');
+const showAnimation = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+            
+        }
+    });
+});
+showAnimation.forEach((li) => {
+    observer.observe(li)
+});
 
 
 window.addEventListener('scroll', () => {
@@ -13,14 +29,14 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('setBgColor')
     }
-})
+});
 
 openNav.addEventListener('click', () => {
     nav.classList.toggle('visible');
-})
+});
 closeNav.addEventListener('click', () => {
     nav.classList.toggle('visible');
-})
+});
 
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -30,4 +46,4 @@ menuLinks.forEach(link => {
 
 progressbars.forEach(bar => {
     bar.style.width = bar.textContent;
-})
+});
