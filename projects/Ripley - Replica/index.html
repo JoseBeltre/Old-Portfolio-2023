@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Ripley</title>
+</head>
+<body>
+    <!-- outside header image -->
+    <div class="header-img">
+        <img src="./assets/cintillo_nav_desk.webp" alt="">
+    </div>
+    <!-- header -->
+    <header>
+        <!-- div menu -->
+            <div class="menu-categories">
+                <div class="icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <span>Menú de <br> Categorias</span>
+            </div>
+        <!-- search div -->
+            <div class="search-div">
+                <input type="search" placeholder="Buscar productos" name="" id="search">
+            </div>
+        <!-- login div -->
+            <div class="login-div">
+                <ion-icon name="person-outline"></ion-icon>
+                <div>
+                    <span>¡Hola! <br> Iniciar Sesión</span>
+                </div>
+            </div>
+    </header>
+    <!-- under header image -->
+    <div class="under-header-img">
+        <img src="./assets/cintillo_bancat_24hyOneToOne_desk.png" alt="">
+    </div>
+    <!-- navigation bar -->
+    <nav>
+        <a href="">Tecnología ></a>
+        <a href="">Computación ></a>
+        <a href=""> Computadoras de Escritorio</a>
+    </nav>
+    <!-- main container -->
+    <div class="container">
+        <!-- 1st row div who has some information -->
+        <div class="rows row1">
+            <p>Las mejores computadoras de escritorio en oferta las encuentras en Ripley Perú. Computadoras Lenovo, HP, Huawei y más. ¡Atrapa los mejores precios de computadoras HOY!</p>
+        </div>
+        <!-- 2nd row div who has the results and the filter-->
+        <div class="rows row2">
+            <div>
+                <span>96 Resultados en Computadoras de Escritorio</span>
+            </div>
+            <div>
+                <!-- filter select -->
+                <select name="filter" id="filter">
+                <option value="">Menor Precio</option>
+                <option value="">Mayor Precio</option>
+                <option value="">Mejor Puntuacion</option>
+                <option value="">Recomendados</option>
+            </select>
+            </div>
+        </div>
+        <!-- 3rd row or main row that contains the aside with the filters and the products -->
+        <div id="main-row" class="rows row3">
+            <!-- aside -->
+            <aside id="menu">
+                <div class="aside-title">
+                    <h1>COMPUTADORAS DE ESCRITORIO</h1>
+                </div>
+                <section class="aside-section">
+                    <h4><ion-icon name="list-outline"></ion-icon>FILTROS</h4>
+                    <h5>Marca</h5>
+                    <h5>Precio</h5>
+                    <h5>Recibelo Hoy</h5>
+                    <h5>Procesador</h5>
+                    <h5>Memoria RAM</h5>
+                    <h5>Microfono integrado</h5>
+                    <h5>Color</h5>
+                    <h5>Tipo de Producto</h5>
+                    <h5>Bluetooth</h5>
+                    <h5>Lector de tarjetas</h5>
+                    <h5>Entrada de audio</h5>
+                    <h5>Puertos HDMI</h5>
+                    <h5>Tamaño de pantalla rango</h5>
+                    <h5>Conexion Inalambrica</h5>
+                </section>
+                <div class="btn-container">
+                    <button>Aplicar Filtros</button>
+                </div>
+            </aside>
+            <!-- products section -->
+            <section class="products-section">
+                <!-- each product dic contains product's info -->
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+                <div class="product">
+                    <div class="featured-div"><img class="featured-seller" src="./assets/tag_vendedordestacado.png" alt=""></div>
+                    <img src="./assets/pc1.avif" alt="">
+                    <div class="product-name">SIGMA</div>
+                    <div class="product-description">COMPUTADORA PC INTEL CORE I5 3.2 GHZ RAM 16GB DISCO DURO 1TB CASE 350W</div>
+                    <ul>
+                        <li class="product-old-price">$2,130</li>
+                        <li class="product-new-price">$1,390</li>
+                    </ul>
+                    <div class="product-color"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- before footer is a div with some short information -->
+    <div class="before-footer">
+        <!-- each div contains an icon and a paragraph -->
+        <div><ion-icon name="storefront-outline"></ion-icon>
+        <h5>Retiro en tienda</h5>
+        <p>Más de 30 tiendas a lo largo de Perú</p>
+        </div>
+        <div><ion-icon name="chatbubbles-outline"></ion-icon>
+            <h5>Atencion al cliente</h5>
+            <p>+51 970311999
+                (01) 611-5959</p>
+        </div>
+        <div><ion-icon name="swap-horizontal-outline"></ion-icon>
+            <h5>Extragarantia</h5>
+            <p>Prolonga la garantia de tus productos</p>
+        </div>
+        <div><ion-icon name="refresh-outline"></ion-icon>
+            <h5>Devolucion</h5>
+            <p>Cambios y Devoluciones</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <!-- div that contains each div with uls -->
+        <div>
+            <div>
+                <h4>Compra con confianza</h4>
+                <!-- each ul contain some il with "links" -->
+                <ul>
+                    <li>¿Cómo comprar en Ripley.com?</li>
+                    <li>Gúias de Compra</li>
+                    <li>Términos y condiciones</li>
+                    <li>Cambios y Devoluciones</li>
+                    <li>Bases Legales</li>
+                    <li>Seguridad y privacidad</li>
+                    <li>Seguimiento de despacho</li>
+                    <li>Política de privacidad de datos</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sobre Ripley</h4>
+                <ul>
+                    <li>Portal de Personas</li>
+                    <li>¿Quiénes Somos?</li>
+                    <li>Nuestras Tiendas</li>
+                    <li>Trabaja con nosotros</li>
+                    <li>Comprobante Electrónico</li>
+                    <li>Reporte de Sostenibilidad 2020</li>
+                    <li>Reporte de Sostenibilidad 2021</li>
+                    <li>Canal de denuncias</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Más de Ripley</h4>
+                <ul>
+                    <li>Banco Ripley</li>
+                    <li>Tarjeta Ripley</li>
+                    <li>Efectivo Express</li>
+                    <li>RipleyPuntos</li>
+                    <li>Seguros Ripley</li>
+                    <li>Extra Garantía</li>
+                    <li>Cyber Wow</li>
+                    <li>Cyber Day Chile</li>
+                    <li>Ripley Chile</li>
+                    <li>Seguros vehiculares</li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <h4>Suscríbete</h4>
+                    <p>
+                        <input type="text" name="" id="suscribe">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="" id="chk-terms">Acepto los <a href="">Términos y Condiciones</a>
+                    </p>
+                </div>
+                <div><h4>Medios de Pago</h4></div>
+                <div>
+                    <h4>Siguenos</h4>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- final text on the footer -->
+        <div class="final-text">
+            <p class="p1">Por tu seguridad, recuerda revisar siempre en tu navegador que el sitio que visitas sea la versión oficial. La dirección https://simple.ripley.com.pe es la única del sitio oficial de Ripley.</p>
+            <p class="p2">
+                Precios solo disponibles en www.ripley.com.pe y Fonocompras. Precios Internet publicados incluyen descuento adicional. Precios sujetos a variaciones sin previo aviso. Productos sujetos a disponibilidad de stock. Solo consumo familiar. Stock mínimo 1 unidad por producto. Ofertas se rigen de acuerdo a los términos y condiciones. Despacho de producto se realizará una vez confirmada la compra.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Links to the script from Ionicons tha permits us to use their icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

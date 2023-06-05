@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <div id="register-form" class="main">
+        <h1>Crea una cuenta</h1>
+        <form action="">
+            <div class="input-div register">
+                <p class="input-p">
+                    Nombre
+                    <ion-icon class="icons" name="person"></ion-icon>
+                </p>
+                <input type="text" name="name" id="name-input" required>
+                <span id="span-name-error" class="spn-errors"></span>
+            </div>
+            <div class="input-div register">
+                <p class="input-p">
+                    Email
+                    <ion-icon class="icons" name="mail"></ion-icon>
+                </p>
+                <input type="email" name="email" id="email-input" required>
+                <span id="span-email-error" class="spn-errors"></span>
+            </div>
+            <div class="input-div register">
+                <p class="input-p">
+                    <span>Contraseña
+                        <span class="circles circle1"></span>
+                        <span class="circles circle2"></span>
+                        <span class="circles circle3"></span>
+                    </span>
+                    <ion-icon id="eye-password" class="icons" name="eye"></ion-icon>
+                </p>
+                <input type="password" name="password" id="password-input" required>
+                <span id="span-password-error" class="spn-errors"></span>
+            </div>
+            <div class="input-div register">
+                <p class="input-p">Confirmar Contraseña</p>
+                <input type="password" name="" id="confirm-password-input" required>
+                <span id="span-confirm_password-error" class="spn-errors"></span>
+            </div>
+            <div class="terms-div register">
+                
+                <p class="p">
+                    <input type="checkbox" name="terms_and_conditions" id="terms-checkbox">
+                    <label for="terms-checkbox">He leído y acepto los</label> <a href="">Terminos y Condiciones</a></p>
+            </div>
+            <div id="submit-div">
+                <button id="btn-submit" type="submit">Registrarse</button>
+            </div>
+            <div class="p" class="have-account">
+                <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></p>
+            </div>
+        </form>
+        <div class="verify-email">
+            <h2>Verifica tu correo electrónico</h2>
+            <p>
+                Por favor, ingrese el código de verificacion que hemos enviado a su correo electrónico.
+                <input id="number-input" type="number" >
+            </p>
+        </div>
+    </div>
+
+
+    <script src="./register.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
