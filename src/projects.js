@@ -11,14 +11,16 @@ export class Project{
         div.classList.add('project');
         div.innerHTML = `
         <a href="${this.url}" target="_blank">
-        <div>
-        <h3>${this.title}</h3>
-        <p>${this.description}</p>
+        <div  class="project-img">
+            <img src="./assets/${this.img}">
+        </div>
+        <div class="project-description">
+            <h3>${this.title}</h3>
+            <p>${this.description}</p>
         </div>
         </a>
         `;
 
-        div.style.backgroundImage = `url(../assets/${this.img})`;
         fatherElement.appendChild(div)
     }
 }
