@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Mokepon</title>
 </head>
-
 <body>
     <header>
         <img src="./media/Mokepon.png" alt="mokepon">
     </header>
-
-    <main class="container">
-        <section id="seleccion-mascota">
+    
+<main class="container">
+    
+        
+    
+        <section id="seleccion-mascota" >
+    
             <h2>Elige tu mascota:</h2>
-            <div id="contenedor-tarjetas" class="seleccion-mascota-div">
-               
-
+            <div class="seleccion-mascota-div">
+        
+                <input type="radio" name="mascota" id="hipodoge" />
+                <label id="hipodoge-label" for="hipodoge">
+                    <p>Hipodoge</p>
+                    <img src="./media/hipodoge.png" alt="Hipodoge">
+                </label>
+                
+        
+                <input  type="radio" name="mascota" id="capipepo" />
+                <label id="capipepo-label" for="capipepo">
+                    <p>Capipepo</p>
+                    <img src="./media/capipepo.png" alt="Capipepo">
+                </label>
+                
+                <input type="radio" name="mascota" id="ratigueya" />
+                <label id="ratigueya-label" for="ratigueya">
+                    <p>Ratigueya</p>
+                    <img src="./media/ratigueya.png" alt="Ratigueya">
+                </label>
+                
                 <!--
-                    <label for="langostelvis">Langostelvis</label>
-                    <input type="radio" name="mascota" id="langostelvis" />
-            
-                    <label for="tucapalma">Tucapalma</label>
-                    <input type="radio" name="mascota" id="tucapalma" />
-            
-                    <label for="pydos">Pydos</label>
-                    <input type="radio" name="mascota" id="pydos" />
-            
-                    Langostelvis -> Agua🌊 y Fuego🔥
-                    Tucapalma -> Agua🌊 y Tierra🌱
-                    Pydos -> Tierra🌱 y Fuego🔥
-                    -->
+                <label for="langostelvis">Langostelvis</label>
+                <input type="radio" name="mascota" id="langostelvis" />
+        
+                <label for="tucapalma">Tucapalma</label>
+                <input type="radio" name="mascota" id="tucapalma" />
+        
+                <label for="pydos">Pydos</label>
+                <input type="radio" name="mascota" id="pydos" />
+        
+                Langostelvis -> Agua🌊 y Fuego🔥
+                Tucapalma -> Agua🌊 y Tierra🌱
+                Pydos -> Tierra🌱 y Fuego🔥
+                -->
             </div>
-            <button type="button" id="boton-mascota">Seleccionar</button>
+            <button type="button" id="boton-mascota" >Seleccionar</button>
         </section>
-        <section id="seleccion-ataque">
+        <section id="seleccion-ataque" >
 
             <h2>Elige el ataque:</h2>
 
-            <div id="contenedor-ataques" class="botones-ataques">
-                
+            <div class="botones-ataques">
+                <button id="boton-ataque-fuego" >Fuego🔥</button>
+                <button id="boton-ataque-agua" >Agua🌊</button>
+                <button id="boton-ataque-tierra" >Tierra🌱</button>
             </div>
 
             <div id="mensajes">
@@ -52,14 +74,14 @@
             </div>
 
             <section id="ultimo-section">
-
+    
                 <div id="div-reiniciar">
-                    <button id="boton-reinicio">Reiniciar</button>
+                    <button id="boton-reinicio" >Reiniciar</button>
                 </div>
             </section>
 
             <div class="ataques-div">
-
+                
                 <div>
                     <p class="green vidas" id="vidas-jugador">3</p>
                     <p class="green" id="mascota-jugador"></p>
@@ -70,12 +92,11 @@
                     <p class="green" id="mascota-enemigo"></p>
                     <div id="ataque-enemigo"></div>
                 </div>
-
+                
             </div>
-
-        </section>
-    </main>
-    <script src="js/codigo.js"></script>
+            
+        </section>  
+</main>
+<script src="js/codigo.js" ></script>
 </body>
-
 </html>
