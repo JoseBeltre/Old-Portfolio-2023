@@ -118,6 +118,50 @@
             <p>Keep in mind that not all the projects were made to be responsive* </p>
             <div class="projects__div animate"></div>
         </section>
+        <section class="contact" id="contact">
+            <h2>CONTACT</h2>
+            <form class="contact-form" action="./src/contact.php" method="post">
+                <div class="contact-form__div1">
+                    <div class="input-divs">
+                        <label class="contact-labels" for="name-input">Name</label>
+                        <input type="text" name="name" id="name-input" class="contact-inputs">
+                    </div>
+                    <div class="input-divs">
+                        <label class="contact-labels" for="email-input">Email</label>
+                        <input type="text" name="email" id="email-input" class="contact-inputs">
+                    </div>
+                    <div class="input-divs">
+                        <label class="contact-labels" for="subject-input">Subject</label>
+                        <input type="text" name="subject" id="subject-input" class="contact-inputs">
+                    </div>
+                </div>
+                <div class="contact-form__div2">
+                    <label class="contact-labels" for="message-input">Message</label>
+                    <textarea name="message" id="message-input" cols="30" rows="10"></textarea>
+                </div>
+                <div class="contact-form__div3">
+                    <button id="btn-submit" type="submit">Enviar</button>
+                </div>
+            </form>
+            <p>or</p>
+            <div class="contact-icons">
+                    <ul class="contact-icons-list">
+                        <li>
+                            <a href="https://github.com/JoseBeltre" target="_blank"><i class="bi bi-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:552006jose@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ElJoseL" target="_blank"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/art_loque/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+            </div>
+            
+        </section>
     </main>
     <script type="module" src="./src/script.js"></script>
 </body>

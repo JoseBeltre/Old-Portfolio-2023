@@ -4,7 +4,7 @@ const header = document.querySelector('header');
 const nav = document.querySelector('.nav');
 const openNav = document.querySelector('.open-nav');
 const closeNav = document.querySelector('.close-nav');
-const aList = document.querySelector('.a_list');
+const aList = document.querySelector('.a_list A');
 const menuLinks = document.querySelectorAll('.a_list a[href^="#"]');
 const progressbars = document.querySelectorAll('.progressbar span');
 const showAnimation = document.querySelectorAll('.animate');
@@ -59,6 +59,27 @@ menuLinks.forEach(link => {
     })
 });
 
+
 progressbars.forEach(bar => {
     bar.style.width = bar.textContent;
+});
+
+const observerNav = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            let targetId = entry.target.getAttribute('id')
+            menuLinks.forEach((link) => {
+                if (link.getAttribute('href') === '#' + targetId) {
+                    link.classList.add('selected')
+                } else {
+                    link.classList.remove('selected')
+                }
+            })
+        }
+    })
+});
+
+const sections = document.querySelectorAll('section')
+sections.forEach(section => {
+    observerNav.observe(section)
 });
