@@ -8,7 +8,7 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 
-$to = '552006jose2@gmail.com'; // Dirección de correo del destinatario
+$to = ''; // Dirección de correo del destinatario
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
@@ -25,8 +25,8 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465;
 $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
-$mail->Username = '552006jose@gmail.com'; // Tu dirección de correo electrónico
-$mail->Password = 'hkamzvhvjbpflnez'; // Tu contraseña
+$mail->Username = ''; // Tu dirección de correo electrónico
+$mail->Password = ''; // Tu contraseña
 $mail->setFrom('noreply@gmail.com');
 $mail->addAddress($to);
 $mail->Subject = $subject;
